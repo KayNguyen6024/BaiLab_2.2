@@ -6,6 +6,7 @@ class Member:
     def add_member(self, db):
         query = "INSERT INTO members (name) VALUES (%s)"
         db.execute_query(query, (self.name,))
+		print(f"Đã thêm thành viên: '{self.name} với ID là {db.cursor.lastrowid}'")
 	
     def delete_member(self, db):
         query = "DELETE FROM members WHERE member_id = %s"
@@ -28,3 +29,4 @@ class Member:
     def get_all_members(db):
         query = "SELECT * FROM members"
         return db.fetch_all(query)
+
