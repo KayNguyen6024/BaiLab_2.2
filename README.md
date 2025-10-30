@@ -41,6 +41,6 @@ library-management/
 ├── member.py        # Quản lý thành viên 
 ├── borrowing.py     # Quản lý mượn/trả sách 
 ├── database.py      # Kết nối MySQL 
-├── bailab2_2.py     # Giao diện dòng lệnh 
+├── lab2_2.py     # Giao diện dòng lệnh 
 └── README.md
 
